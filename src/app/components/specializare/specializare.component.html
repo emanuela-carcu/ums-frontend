@@ -1,0 +1,18 @@
+<div class="container">
+  <table>
+    <thead>
+    <tr>
+      <th>Nume</th>
+      <th>Facultate</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let specializare of specializari">
+      <td>{{specializare.numeSpecializare}}</td>
+      <td>{{specializare.facultate?.numeFacultate}}</td>
+
+    </tr>
+    </tbody>
+  </table>
+  <button class="button-67" role="button" routerLink="../add-specializare">Adaugă specializare</button>
+</div>
